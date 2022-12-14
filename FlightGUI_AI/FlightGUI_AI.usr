@@ -12,10 +12,10 @@ DevelopTool=AQT
 
 [Actions]
 Action0=Action0\Script.mts
-Login=Action1\Script.mts
-BookFlight=Action2\Script.mts
-Logout=Action3\Script.mts
-SearchFlightOrder=Action4\Script.mts
+100-Login=Action1\Script.mts
+200-BookFlight=Action2\Script.mts
+700-Logout=Action3\Script.mts
+500-SearchOrder=Action4\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
