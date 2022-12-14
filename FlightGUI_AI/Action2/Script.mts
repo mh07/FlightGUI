@@ -7,4 +7,4 @@ AIUtil("text_box", "Passenger Name").Type "john"
 AIUtil("button", "ORDER").Click
 
 OrderNumber = AIUtil.FindTextBlock(micAnyText, micWithAnchorOnLeft, AIUtil("check_mark", micAnyText, micFromBottom, 1)).GetText
-Parameter("FlightOrderNumber") = split(OrderNumber, " ")(1)
+Parameter("OrderNumberOut") = split(OrderNumber, " ")(1)

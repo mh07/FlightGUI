@@ -6,5 +6,5 @@ AIUtil.FindText("New Search").Click
 End If
 AIUtil("button", "SEARCH ORDER").Click
 AIUtil("radio_button", "(@]").SetState "On"
-AIUtil.FindTextBlock("Order number").TypeSecure Parameter("OrderNumberSearch")
+AIUtil.FindTextBlock("Order number").TypeSecure Parameter("OrderNumber")
 AIUtil("button", "SEARCH").Click
