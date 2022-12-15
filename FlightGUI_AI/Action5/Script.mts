@@ -4,14 +4,17 @@ AIUtil.SetContext WpfWindow("wpftypename:=window", "regexpwndtitle:=Micro Focus 
 AIUtil("text_box", "Username").Type "john"
 AIUtil("text_box", "Password").Type "hp"
 AIUtil("button", "OK").Click
+
+
 AIUtil("button", "FIND FLIGHTS").Click
-AIUtil.FindTextBlock("166.80").Click
+AIUtil.FindTextBlock("138.60").Click
 AIUtil("button", "SELECT FLIGHT").Click
 AIUtil("text_box", "Passenger Name").Type "john"
 AIUtil("button", "ORDER").Click
 
+
 OrderNum = AIUtil.FindTextBlock(micAnyText, micWithAnchorOnLeft, AIUtil("check_mark", micAnyText, micFromBottom, 1)).GetText
-Parameter("OrderNumberOutLive") = split(OrderNum, " ")(1)
-msgbox Parameter("OrderNumberOutLive")
+Parameter("OrderNumberOut")= split(OrderNum, " ")(1)
+msgbox Parameter("OrderNumberOut")
 
 
